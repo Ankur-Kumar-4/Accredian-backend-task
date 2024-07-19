@@ -1,0 +1,19 @@
+{
+  "name": "accredian-backend-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.3",
+    "nodemailer": "^6.9.14",
+    "prisma": "^5.17.0"
+  }
+}
