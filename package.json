@@ -9,7 +9,9 @@
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest",
-    "prod": "npm run build && npm run start"
+    "db:migrate": "prisma migrate deploy",
+    "db:generate": "prisma generate",
+    "prod": "npm run build && npm run db:generate && npm run db:migrate && npm start"
   },
   "dependencies": {
     "@prisma/client": "^4.x.x",
@@ -36,6 +38,6 @@
     "prisma": "^4.x.x",
     "ts-jest": "^29.x.x",
     "ts-node": "^10.x.x",
-    "typescript": "^4.x.x"
+    "typescript": "^4.9.5"
   }
 }
