@@ -8,7 +8,8 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
-    "test": "jest"
+    "test": "jest",
+    "prod": "npm run build && npm run start"
   },
   "dependencies": {
     "@prisma/client": "^4.x.x",
